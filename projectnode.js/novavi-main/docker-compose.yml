@@ -1,0 +1,7 @@
+---
+services:
+  nov:
+    image: novavi
+    ports:
+      - "4000:3000"
+        

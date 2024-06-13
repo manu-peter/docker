@@ -1,0 +1,7 @@
+---
+services:
+  manu:
+    image: manu
+    ports:
+      - "7654:3000"
+...

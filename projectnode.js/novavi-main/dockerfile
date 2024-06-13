@@ -1,0 +1,9 @@
+from node
+workdir /app
+copy package*.json .
+RUN NODE_ENV=development npm i
+expose 3000
+copy . .
+cmd ["node",""]
+
+

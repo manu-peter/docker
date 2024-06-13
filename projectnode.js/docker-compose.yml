@@ -1,0 +1,7 @@
+---
+services:
+  n1:
+    ports:
+      - "8070:3000"
+    image: node
+    volumes: nv1:/home/node/app
