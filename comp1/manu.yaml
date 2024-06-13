@@ -1,0 +1,50 @@
+---
+services:
+  demo1:
+    ports:
+      - "8080:80"
+    image: httpd
+    volumes:
+      - d1:/usr/local/apache2/htdocs/
+        
+  demo2:
+    ports:
+      - "8081:80"
+    image: httpd
+    volumes:
+      - d2:/usr/local/apache2/htdocs/
+
+  demo3:
+    ports:
+      - "8082:80"
+    image: httpd
+    volumes:
+      - d3:/usr/local/apache2/htdocs/
+
+  demo4:
+    ports:
+      - "9092:80"
+    image: nginx
+    volumes:
+      - /home/synnefo/comp1/cake-shop-website-template/:/usr/share/nginx/html
+
+  demo5:
+    ports:
+      - "9093:80"
+    image: nginx
+    volumes:
+      - /home/synnefo/comp1/templatemo_560_astro_motion/:/usr/share/nginx/html
+
+  demo6:
+    image: ubuntu
+
+volumes:
+   d1:
+     external: true
+   d2:
+     external: true
+   d3:
+     external: true
+  
+
+

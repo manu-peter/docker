@@ -1,0 +1,12 @@
+---
+services:
+  demo:
+    image: httpd
+    ports:
+      - "9090:80"
+    volumes:
+      - /home/synnefo/comp0/nocobot/:/usr/local/apache2/htdocs
+
+
+      
+
