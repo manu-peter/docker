@@ -17,8 +17,7 @@ Basic commands used in Docker are. :
 * docker ps / ps -a --> To list out working containers ( ps ) , To list out all non and working containers ( ps -a ) .
 * docker system prune -a --> To remove all unused images (not just dangling ones), containers, networks, and optionally volumes , You can use -a -f options along with this command to remove everythings without and confirmation .
 
-
-* Docker image commands :
+Docker image commands :
 * docker image ls --> To list out images .
 * docker image prune --> To remove dangling or untagged images assosiated with the containers .
 * docker pull image_name:tag --> To pull image from docker hub .
@@ -26,8 +25,7 @@ Basic commands used in Docker are. :
 * docker rmi -f my_image:latest --> To remove images from a container even if it still running .
 * docker rmi -f image1 image2 image3 --> To remove multiple images .
 
-
-* Docker container commands :
+Docker container commands :
 * docker run options image_name:tag --> To run a container .
 * docker start container_id --> To satrt a stopped container .
 * docker stop container_id --> To stop a container .
@@ -38,16 +36,14 @@ Basic commands used in Docker are. :
 * docker logs container_id --> To see logs of a container .
 * docker container prune --> To remove stopped containers which are not in use .
 
-
-* Docker volume commands :
+Docker volume commands :
 * docker system prune -a --volumes --> To include unused volumes in the cleanup .
 * docker volume create vol-name --> To create volume .
 * docker volume ls --> To list out volumes .
 * docker volume inspect vol-name --> To inspect a volume .
 * docker volume rm vol-name --> To delete volume .
 
-
-* Docker network commands :
+Docker network commands :
 * docker network ls --> To list out the networks .
 * docker network inspect network_name --> To inspect a network .
 * docker network create network-name --> To create network .
